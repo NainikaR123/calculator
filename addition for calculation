@@ -4,6 +4,15 @@ int add(int num1, int num2)
 {
     return num1 + num2; 
 }
+int subtraction(int num1,int num2)
+{
+    return num1-num2;
+}
+int multiplication(int n1,int n2)
+{
+    return n1*n2;
+}
+
 
 int main() 
 {
@@ -19,6 +28,13 @@ int main()
     result = add(num1, num2); 
 
     printf("The sum of %d and %d is: %d\n", num1, num2, result);
+
+    result=subtraction(num1,num2);
+    printf("The difference is: %d\n", result);
+
+    result=multiplication(num1,num2);
+    printf("The product is: %d\n", result);
+
 
     return 0;
 }
