@@ -4,7 +4,17 @@ int add(int num1, int num2)
 {
     return num1 + num2; 
 }
-
+int division(int num1,int num2)
+{
+if (num2==0)
+{
+printf("not valid denominator");
+}
+else
+{
+return num1/num2;
+}
+}
 int main() 
 {
     int num1, num2, result;
@@ -19,6 +29,11 @@ int main()
     result = add(num1, num2); 
 
     printf("The sum of %d and %d is: %d\n", num1, num2, result);
+
+result = division(num1, num2); 
+
+    printf("The sum of %d and %d is: %d\n", num1, num2, result);
+
 
     return 0;
 }
